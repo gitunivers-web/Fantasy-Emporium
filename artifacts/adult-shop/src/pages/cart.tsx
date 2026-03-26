@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Trash2, ArrowRight, ShoppingBag } from 'lucide-react';
+import { Trash2, ArrowRight, ShoppingBag, ShieldCheck } from 'lucide-react';
 import { useCartStore } from '@/store/cart';
 import { Button } from '@/components/ui-custom';
 import { formatPrice } from '@/lib/utils';
