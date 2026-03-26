@@ -123,6 +123,7 @@ function mapProduct(p: typeof productsTable.$inferSelect) {
     length: p.length,
     diameter: p.diameter,
     tags: (p.tags as string[]) || [],
+    videoUrl: p.videoUrl,
   };
 }
 

@@ -23,6 +23,7 @@ export const productsTable = pgTable("products", {
   length: text("length"),
   diameter: text("diameter"),
   tags: jsonb("tags").$type<string[]>().default([]),
+  videoUrl: text("video_url"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
