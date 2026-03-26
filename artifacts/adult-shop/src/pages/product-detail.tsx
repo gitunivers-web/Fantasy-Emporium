@@ -10,24 +10,25 @@ function VideoPlayer({ src }: { src: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
+  const [failed, setFailed] = useState(false);
+
+  if (failed) return null;
 
   const togglePlay = () => {
-    if (videoRef.current) {
-      if (playing) videoRef.current.pause();
-      else videoRef.current.play();
-      setPlaying(!playing);
-    }
+    if (!videoRef.current) return;
+    if (playing) videoRef.current.pause();
+    else videoRef.current.play().catch(() => {});
+    setPlaying(!playing);
   };
 
   const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !muted;
-      setMuted(!muted);
-    }
+    if (!videoRef.current) return;
+    videoRef.current.muted = !muted;
+    setMuted(!muted);
   };
 
   const goFullscreen = () => {
-    if (videoRef.current) videoRef.current.requestFullscreen?.();
+    videoRef.current?.requestFullscreen?.();
   };
 
   return (
@@ -40,6 +41,8 @@ function VideoPlayer({ src }: { src: string }) {
         loop
         playsInline
         className="w-full h-full object-cover opacity-90"
+        onError={() => setFailed(true)}
+        onLoadedData={() => setFailed(false)}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="absolute top-4 left-4">

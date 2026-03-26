@@ -60,43 +60,44 @@ const IMG = {
   ],
 };
 
-// ─── Video pool per category (ambient lifestyle videos) ──────────────────────
+// ─── Video pool per category (free public stock videos, no auth required) ────
+const BASE = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample";
 const VIDEOS = {
   vibrators: [
-    "https://videos.pexels.com/video-files/3571264/3571264-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/4499921/4499921-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/5201474/5201474-sd_640_360_30fps.mp4",
-    "https://videos.pexels.com/video-files/7992956/7992956-sd_426_240_25fps.mp4",
+    `${BASE}/ForBiggerBlazes.mp4`,
+    `${BASE}/ForBiggerEscapes.mp4`,
+    `${BASE}/ForBiggerFun.mp4`,
+    `${BASE}/ForBiggerJoyrides.mp4`,
   ],
   dildos: [
-    "https://videos.pexels.com/video-files/3705516/3705516-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/6832822/6832822-sd_640_360_24fps.mp4",
-    "https://videos.pexels.com/video-files/4125672/4125672-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/5947927/5947927-sd_640_360_30fps.mp4",
+    `${BASE}/ForBiggerMeltdowns.mp4`,
+    `${BASE}/TearsOfSteel.mp4`,
+    `${BASE}/SubaruOutbackOnStreetAndDirt.mp4`,
+    `${BASE}/WeAreGoingOnBullrun.mp4`,
   ],
   "sex-dolls": [
-    "https://videos.pexels.com/video-files/3769697/3769697-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/5779273/5779273-sd_640_360_30fps.mp4",
-    "https://videos.pexels.com/video-files/3201762/3201762-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/6978971/6978971-sd_426_240_30fps.mp4",
+    `${BASE}/WhatCarCanYouGetForAGrand.mp4`,
+    `${BASE}/VolkswagenGTIReview.mp4`,
+    `${BASE}/ForBiggerBlazes.mp4`,
+    `${BASE}/TearsOfSteel.mp4`,
   ],
   pills: [
-    "https://videos.pexels.com/video-files/4170025/4170025-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/6550537/6550537-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/3046663/3046663-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/7675988/7675988-sd_640_360_30fps.mp4",
+    `${BASE}/Sintel.mp4`,
+    `${BASE}/ForBiggerFun.mp4`,
+    `${BASE}/ForBiggerEscapes.mp4`,
+    `${BASE}/ForBiggerJoyrides.mp4`,
   ],
   bdsm: [
-    "https://videos.pexels.com/video-files/4271779/4271779-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/3886046/3886046-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/5273793/5273793-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/6710571/6710571-sd_640_360_30fps.mp4",
+    `${BASE}/WeAreGoingOnBullrun.mp4`,
+    `${BASE}/ForBiggerMeltdowns.mp4`,
+    `${BASE}/ForBiggerBlazes.mp4`,
+    `${BASE}/SubaruOutbackOnStreetAndDirt.mp4`,
   ],
   lingerie: [
-    "https://videos.pexels.com/video-files/5878985/5878985-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/3706740/3706740-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/6002396/6002396-sd_640_360_25fps.mp4",
-    "https://videos.pexels.com/video-files/4324124/4324124-sd_640_360_25fps.mp4",
+    `${BASE}/ForBiggerEscapes.mp4`,
+    `${BASE}/VolkswagenGTIReview.mp4`,
+    `${BASE}/WhatCarCanYouGetForAGrand.mp4`,
+    `${BASE}/TearsOfSteel.mp4`,
   ],
 };
 
