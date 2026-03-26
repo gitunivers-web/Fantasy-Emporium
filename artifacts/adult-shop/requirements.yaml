@@ -1,0 +1,21 @@
+packages:
+  "framer-motion": "For premium smooth page transitions and micro-interactions"
+  "zustand": "Simple and fast global state management for the shopping cart"
+  "lucide-react": "Beautiful consistent iconography"
+  "react-hook-form": "Form state management for checkout"
+  "@hookform/resolvers": "Zod integration for react-hook-form"
+  "zod": "Schema validation for forms"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/adult-shop/public/images/hero-bg.png"
+    description: "Luxurious abstract dark deep purple background with soft flowing rose gold silk waves, highly elegant, sleek, soft studio lighting, shallow depth of field, premium boutique feel"
+    aspect_ratio: "21:9"
+  - path: "artifacts/adult-shop/public/images/discreet-box.png"
+    description: "A premium blank matte black cardboard box tied with a subtle dark ribbon, soft studio lighting, luxurious feel, signifying discreet shipping, dark purple background"
+    aspect_ratio: "1:1"
+
+notes:
+  - "Importing REST hooks directly from @workspace/api-client-react"
+  - "Assuming shadcn/ui base is available but customizing heavily for a premium dark mode look"

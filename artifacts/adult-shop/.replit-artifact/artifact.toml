@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "PlaisirXpress - Boutique Adulte"
+version = "1.0.0"
+id = "artifacts/adult-shop"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24958
+
+[services.development]
+run = "pnpm --filter @workspace/adult-shop run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/adult-shop", "run", "build" ]
+publicDir = "artifacts/adult-shop/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24958"
+BASE_PATH = "/"
